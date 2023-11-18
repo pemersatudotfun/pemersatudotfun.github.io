@@ -6,6 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pemersatu.fun Bokep Lucah Viral Malay Indo</title>
+	  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+var firebaseConfig = {
+apiKey: "AIzaSyADFzYFDM3D6__WXHZ0RvwxzHspzFvEwmw",
+authDomain: "pemersatu-7b002.firebaseapp.com",
+projectId: "pemersatu-7b002",
+storageBucket: "pemersatu-7b002.appspot.com",
+messagingSenderId: "867511991001",
+appId: "1:867511991001:web:bcff279318ec224859dcc8",
+ measurementId: "G-QCED8REGCD"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+const messaging = firebase.messaging();
+
+messaging.getToken({vapidKey: 'BER79ufMsnLdKWrO0kFn6qn7EtqndnkI2konzkf6Ei6XdK35UMKifGym39k5kRzDegQK-wfWLcwWL-57sx2Nd_g'}).then((currentToken) => {
+    if (currentToken) {
+        sendTokenToServer(currentToken);
+    } else{
+        console.log('No registration token available. Request permission to generate one.');
+    }
+}).catch((err) => {
+    console.log('An error occurred while retrieving token. ', err);
+});
+
+function sendTokenToServer(currentToken) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://pwa.pemersatu.fun/fb.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send('token=' + currentToken);
+}
+</script>
   </head>
   <body>
     <main><center>
