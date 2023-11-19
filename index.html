@@ -6,7 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pemersatu.fun Bokep Lucah Viral Malay Indo</title>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyADFzYFDM3D6__WXHZ0RvwxzHspzFvEwmw",
+        authDomain: "pemersatu-7b002.firebaseapp.com",
+        projectId: "pemersatu-7b002",
+        storageBucket: "pemersatu-7b002.appspot.com",
+        messagingSenderId: "867511991001",
+        appId: "1:867511991001:web:bcff279318ec224859dcc8",
+        measurementId: "G-QCED8REGCD"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    const messaging = firebase.messaging();
+
+    Notification.requestPermission().then((permission) => {
+        if (permission === 'granted') {
+            console.log('Izin notifikasi diberikan.');
+            messaging.getToken().then((currentToken) => {
+                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else{
+                    console.log('Tidak ada token pendaftaran yang tersedia. Minta izin untuk menghasilkan satu.');
+                }
+            }).catch((err) => {
+                console.log('Terjadi kesalahan saat mengambil token. ', err);
+            });
+        } else {
+            console.log('Tidak dapat mendapatkan izin untuk memberi notifikasi.');
+        }
+    });
+
+    function sendTokenToServer(currentToken) {
+        fetch('https://pwa.pemersatu.fun/fb.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'token=' + encodeURIComponent(currentToken),
+        })
+        .then(response => response.text())
+        .then(data => console.log(data))
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    }
+</script>
 
   </head>
   <body>
