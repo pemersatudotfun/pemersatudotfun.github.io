@@ -6,49 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pemersatu.fun Bokep Lucah Viral Malay Indo</title>
-	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyADFzYFDM3D6__WXHZ0RvwxzHspzFvEwmw",
-            authDomain: "pemersatu-7b002.firebaseapp.com",
-            projectId: "pemersatu-7b002",
-            storageBucket: "pemersatu-7b002.appspot.com",
-            messagingSenderId: "867511991001",
-            appId: "1:867511991001:web:bcff279318ec224859dcc8",
-            measurementId: "G-QCED8REGCD"
-        };
+	    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyADFzYFDM3D6__WXHZ0RvwxzHspzFvEwmw",
+        authDomain: "pemersatu-7b002.firebaseapp.com",
+        projectId: "pemersatu-7b002",
+        storageBucket: "pemersatu-7b002.appspot.com",
+        messagingSenderId: "867511991001",
+        appId: "1:867511991001:web:bcff279318ec224859dcc8",
+        measurementId: "G-QCED8REGCD"
+    };
 
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
 
-        const messaging = firebase.messaging();
+    const messaging = firebase.messaging();
 
-        Notification.requestPermission().then((permission) => {
-            if (permission === 'granted') {
-                console.log('Notification permission granted.');
-                messaging.getToken({vapidKey: 'BER79ufMsnLdKWrO0kFn6qn7EtqndnkI2konzkf6Ei6XdK35UMKifGym39k5kRzDegQK-wfWLcwWL-57sx2Nd_g'}).then((currentToken) => {
-                    if (currentToken) {
-                        sendTokenToServer(currentToken);
-                    } else{
-                        console.log('No registration token available. Request permission to generate one.');
-                    }
-                }).catch((err) => {
-                    console.log('An error occurred while retrieving token. ', err);
-                });
-            } else {
-                console.log('Unable to get permission to notify.');
-            }
-        });
-
-        function sendTokenToServer(currentToken) {
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://pwa.pemersatu.fun/fb.php', true);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhr.send('token=' + currentToken);
+    Notification.requestPermission().then((permission) => {
+        if (permission === 'granted') {
+            console.log('Izin notifikasi diberikan.');
+            messaging.getToken().then((currentToken) => {
+                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else{
+                    console.log('Tidak ada token pendaftaran yang tersedia. Minta izin untuk menghasilkan satu.');
+                }
+            }).catch((err) => {
+                console.log('Terjadi kesalahan saat mengambil token. ', err);
+            });
+        } else {
+            console.log('Tidak dapat mendapatkan izin untuk memberi notifikasi.');
         }
-    </script>
+    });
+
+    function sendTokenToServer(currentToken) {
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://pwa.pemersatu.fun/fb.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send('token=' + encodeURIComponent(currentToken));
+    }
+</script>
+
   </head>
   <body>
     <main><center>
