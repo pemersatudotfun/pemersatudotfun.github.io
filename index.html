@@ -6,36 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pemersatu.fun Bokep Lucah Viral Malay Indo</title>
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-    const firebaseConfig = {
-         apiKey: "AIzaSyADFzYFDM3D6__WXHZ0RvwxzHspzFvEwmw",
-        authDomain: "pemersatu-7b002.firebaseapp.com",
-        projectId: "pemersatu-7b002",
-        storageBucket: "pemersatu-7b002.appspot.com",
-        messagingSenderId: "867511991001",
-        appId: "1:867511991001:web:bcff279318ec224859dcc8",
-        measurementId: "G-QCED8REGCD"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const messaging = firebase.messaging();
-    messaging.requestPermission().then(() => {
-        return messaging.getToken();
-    }).then(token => {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://pwa.pemersatu.fun/pwa.php?token=" + token, true);
-        xhttp.send('token=' + token);
-    }).catch(err => {});
-    if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/wkr.js").then(function(reg) {}).catch(function(err) {
-            console.log("err", err);
-        });
-    }
-});
-</script>
+
 
   </head>
   <body>
