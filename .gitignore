@@ -1,0 +1,6 @@
+# .gitignore
+firebase-messaging-sw.js
+firebase.js
+wkr.js
+detect-pemersatu.html
+detect-movie.html
