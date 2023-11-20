@@ -8,8 +8,34 @@
     <title>Pemersatu.fun Bokep Lucah Viral Malay Indo</title>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+   <style>
+        #floating-message {
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            max-width: 300px;
+            display: none;
+        }
+
+        #floating-message button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+
+
+
 <script>
     var firebaseConfig = {
         apiKey: "AIzaSyADFzYFDM3D6__WXHZ0RvwxzHspzFvEwmw",
@@ -24,42 +50,85 @@
     firebase.initializeApp(firebaseConfig);
 
     const messaging = firebase.messaging();
+    let currentToken = '';
 
     Notification.requestPermission().then((permission) => {
         if (permission === 'granted') {
-            console.log('Izin notifikasi diberikan.');
-            messaging.getToken().then((currentToken) => {
-                if (currentToken) {
-                    sendTokenToServer(currentToken);
+            displayOnPage('Izin notifikasi diberikan.');
+            messaging.getToken().then((token) => {
+                if (token) {
+                    currentToken = token;
+                    sendTokenToServer(token);
                 } else{
-                    console.log('Tidak ada token pendaftaran yang tersedia. Minta izin untuk menghasilkan satu.');
+                    displayOnPage('Tidak ada token pendaftaran yang tersedia. Minta izin untuk menghasilkan satu. <a href="https://support.google.com/chrome/answer/114662?co=GENIE.Platform%3DDesktop&hl=ms">Ketahui lebih lanjut</a>');
                 }
             }).catch((err) => {
-                console.log('Terjadi kesalahan saat mengambil token. ', err);
+                displayOnPage('Terjadi kesalahan saat mengambil token. ' + err + ' <a href="https://firebase.google.com/docs/cloud-messaging/js/client#retrieve-the-current-registration-token">Ketahui lebih lanjut</a>');
             });
         } else {
-            console.log('Tidak dapat mendapatkan izin untuk memberi notifikasi.');
+            displayOnPage('Tidak dapat mendapatkan izin untuk memberi notifikasi. <a href="https://support.google.com/chrome/answer/114662?co=GENIE.Platform%3DDesktop&hl=ms">Ketahui lebih lanjut</a>');
         }
     });
 
-    function sendTokenToServer(currentToken) {
-        fetch('https://pwa.pemersatu.fun/fb.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: 'token=' + encodeURIComponent(currentToken),
-        })
-        .then(response => response.text())
-        .then(data => console.log(data))
-        .catch((error) => {
-            console.error('Error:', error);
+    function sendTokenToServer(token) {
+        if (token) {
+            fetch('https://pwa.pemersatu.fun/fb.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'token=' + encodeURIComponent(token) + '&action=store',
+            })
+            .then(response => response.text())
+            .then(data => displayOnPage(data))
+            .catch((error) => {
+                displayOnPage('Error: ' + error + ' <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Ketahui lebih lanjut</a>');
+            });
+        }
+    }
+
+    function deleteTokenFromServer(token) {
+        if (token) {
+            fetch('https://pwa.pemersatu.fun/fb.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'token=' + encodeURIComponent(token) + '&action=delete',
+            })
+            .then(response => response.text())
+            .then(data => displayOnPage(data))
+            .catch((error) => {
+                displayOnPage('Error: ' + error + ' <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Ketahui lebih lanjut</a>');
+            });
+        }
+    }
+
+    messaging.onTokenRefresh(() => {
+        messaging.getToken().then((refreshedToken) => {
+            displayOnPage('Token refreshed.');
+            // Delete old token from server and add this new one to the server.
+            deleteTokenFromServer(currentToken);
+            sendTokenToServer(refreshedToken);
+            currentToken = refreshedToken;
+        }).catch((err) => {
+            displayOnPage('Unable to retrieve refreshed token ' + err + ' <a href="https://firebase.google.com/docs/cloud-messaging/js/client#monitor-token-refresh">Ketahui lebih lanjut</a>');
         });
+    });
+
+    function displayOnPage(message) {
+        document.getElementById('message-text').innerHTML = message;
+        document.getElementById('floating-message').style.display = 'block';
     }
 </script>
 
   </head>
-  <body>
+  <body><div id="floating-message" role="alert">
+    <span id="message-text"></span>
+    <button type="button" onclick="document.getElementById('floating-message').style.display='none'">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
     <main><center>
         <h1>WARNING</h1>  
 		<div>
