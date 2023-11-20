@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Jaringan internet bermasalah</title>
+      <style>body{font-family:helvetica,arial,sans-serif;margin:0;padding:0;color:#444}a{color:#000}p{margin-block:1rem}.content{padding:0 2em}.navbar{background-color:#a70836;padding:10px 2em}.brand{background:url(https://cdn.jsdelivr.net/gh/layarkaca21/lk21/images/logo-layarkaca21.svg) 0 2px no-repeat;width:230px;height:35px;background-size:230px;padding:0}#message{display:none}</style>
+   </head>
+   <body>
+      <div class="navbar">
+         <div class="brand"></div>
+      </div>
+      <div class="content">
+         <h1>Akses ke PEMERSATUDOTFUN terganggu !</h1>
+         <div id="loading" style="font-style:italic">Memeriksa koneksi..</div>
+         <div id="message"></div>
+      </div>
+		<script>
+			var success = false;
+goTo = function(x) {
+    if (!success) {
+        document.getElementById('message').style.display = 'block';
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('message').innerHTML = "Harap tunggu..<br>System mengalihkan ke website PEMERSATUDOTFUN yang aktif!<br><br>=> https://" + x;
+        success = true;
+        window.location.replace('https://' + x + '/' + window.location.pathname + window.location.search);
+    }
+};
+getList = function(callback) {
+    const xhr = new XMLHttpRequest();
+    xhr.addEventListener("load", function() {
+        callback(xhr.responseText);
+    });
+    xhr.addEventListener('error', function(e) {
+        document.getElementById('message').style.display = 'block';
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('message').innerHTML = "Sepertinya jaringan internet anda sedang <b>tidak stabil / offline</b>,<br>harap<b> cek kembali koneksi jaringan internet anda!";
+    });
+    xhr.open("GET", "https://pwa.pemersatu.fun/daftarsitus.php?h=" + window.location.host + '&t=' + new Date().getTime());
+    xhr.send();
+};
+pingServer = function(list) {
+    if (list != '') {
+        const domains = list.split("\n");
+        var xhr = [],
+            x = 0;
+        domains.forEach(function(v, k) {
+            xhr[k] = new XMLHttpRequest();
+            xhr[k].addEventListener("load", function() {
+                goTo(v);
+            });
+            xhr[k].addEventListener('error', function(e) {
+                x++;
+                if (x == domains.length) {
+                    document.getElementById('message').style.display = 'block';
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('message').innerHTML = "Tidak dapat menjangkau semua website PEMERSATUDOTFUN :(.<p>Sementara gunakan VPN, atau berganti jaringan !</p><p>Gabung grup telegram <a href='https://t.me/pemersatu86_2'>https://t.me/pemersatu86_2</a> untuk mendapatkan informasi lebih lanjut.</p>";
+                }
+            });
+            xhr[k].open('GET', 'https://' + v + '/ping.php?t=' + new Date().getTime());
+            xhr[k].send();
+        });
+    }
+};
+getList(pingServer);
+
+</script>
+<script>
+(function() {
+    var js = "window['__CF$cv$params']={r:'82890610cf334c1d',t:'MTcwMDQwMjg5MC4zNzQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
+    var _0xh = document.createElement('iframe');
+    _0xh.height = 1;
+    _0xh.width = 1;
+    _0xh.style.position = 'absolute';
+    _0xh.style.top = 0;
+    _0xh.style.left = 0;
+    _0xh.style.border = 'none';
+    _0xh.style.visibility = 'hidden';
+    document.body.appendChild(_0xh);
+
+    function handler() {
+        var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
+        if (_0xi) {
+            var _0xj = _0xi.createElement('script');
+            _0xj.innerHTML = js;
+            _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
+        }
+    }
+    if (document.readyState !== 'loading') {
+        handler();
+    } else if (window.addEventListener) {
+        document.addEventListener('DOMContentLoaded', handler);
+    } else {
+        var prev = document.onreadystatechange || function() {};
+        document.onreadystatechange = function(e) {
+            prev(e);
+            if (document.readyState !== 'loading') {
+                document.onreadystatechange = prev;
+                handler();
+            }
+        };
+    }
+})();
+</script>
+   </body>
+</html>
