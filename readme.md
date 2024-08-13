@@ -5,38 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <h1>Pemersatu.fun Bokep Lucah Viral Malay Indo</h1>
+    <meta name="description" content="Nonton PEMERSATU.FUN adalah situs penyedia bokep lucah terbaik." />
+    <meta name="keywords" content="pemersatu.fun, pemersatudotfun, pemersatu, bokep indo, indo, viral indo, ometv, ome tv, bokep ometv, bokep ome tv, bokep hijab, bokep abg, bokep sma" />
+    <meta name="publisher" content="PEMERSATUDOTFUN">
+<meta name="distribution" content="global">
+<meta http-equiv="copyright@ 2024 PEMERSATUDOTFUN" content="PEMERSATUDOTFUN">
+<meta name="webcrawlers" content="all">
+<meta name="rating" content="general">
+<meta name="spiders" content="all">
+<meta name="copyright" content="PEMERSATUDOTFUN">
+<meta name="Slurp" content="all">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <title>Pemersatu.fun Bokep Lucah Viral Malay Indo</title>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+   <style>
+        #floating-message {
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            max-width: 300px;
+            display: none;
+        }
+
+        #floating-message button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+<style>
+      @keyframes blink {
+            0% {opacity: 1;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        .blinking {
+            animation: blink 1s infinite;
+            color: red;
+            font-weight: bold;
+        }
+</style>
+
+     <style>
+ul {
+    
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Memberikan jarak bawah antar item */
+}
+
+a {
+    display: inline-block;
+    
+    color: blue; /* Warna teks */
+    border: 1px solid #ccc; /* Memberikan border */
+    border-radius: 5px; /* Membulatkan sudut */
+    transition: background-color 0.3s ease; /* Animasi saat hover */
+}
+
+a:hover {
+    background-color: #f0f0f0; /* Warna background saat hover */
+}
+
+	     body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .paper {
+            width: 300px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transform: rotate(-2deg);
+        }
+        .paper p {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+        }
+</style>
+
+
   </head>
-  <body>
-    <main><center>
-        <h1>WARNING</h1>  
-		<div>
-        This website pemersatu.fun contains age-restricted materials.<br>
-		If you are under the age of 18 years, or under the age of majority in the location from where you are accessing this website you do not have authorization or permission to enter this website or access any of its materials. If you are over the age of 18 years or over the age of majority in the location from where you are accessing this website by entering the website, you hereby agree to comply with all the Terms and Conditions. You also acknowledge and agree that you are not offended by nudity and explicit depictions of sexual activity. By clicking on the "Enter" button, and by entering this website you agree with all the above and certify under penalty of perjury that you are an adult.<br><br>
-		All models appearing on this website are 18 years or older. By entering this site you swear that you are of legal age in your area to view adult material and that you wish to view such material.</center>
-		</div>
-<p>
-<center><h1><a href="https://pemersatufun.site">ENTER SITE</a> | <a rel="nofollow" href="https://wikipedia.com">EXIT</a><br/>
-situs PEMERSATUDOTFUN lainnya yang patut di semak pula, FREE 100% <BR />
-<a href="https://video.pemersatudotfun.com">video.pemersatudotfun.com</a><br/>
-<a href="https://dood.pemersatufun.site">dood.pemersatufun.site</a>
-</h1>
+  <body><main><center>
+<h1>PEMERSATU.FUN</h1>
+<h1>WARNING</h1>
+<div><strong>This website pemersatu.fun contains age-restricted materials.</strong><br />If you are under the age of 18 years, or under the age of majority in the location from where you are accessing this website you do not have authorization or permission to enter this website or access any of its materials. If you are over the age of 18 years or over the age of majority in the location from where you are accessing this website by entering the website, you hereby agree to comply with all the Terms and Conditions. You also acknowledge and agree that you are not offended by nudity and explicit depictions of sexual activity. By clicking on the "Enter" button, and by entering this website you agree with all the above and certify under penalty of perjury that you are an adult.<br /><br />All models appearing on this website are 18 years or older. By entering this site you swear that you are of legal age in your area to view adult material and that you wish to view such material.</div>
+<h2><a href="https://video.pemersatu.org" target="_blank" rel="dofollow">ENTER SITE</a> | <a href="https://wikipedia.com" rel="nofollow">EXIT</a></h2>
 </center>
-</p>
-<div>
+<p><strong>Laman web kami berbaloi untuk disertai jika anda sudi menerima syarat di atas, 100% Free :</strong></p>
 <ul>
-<b>apabila anda dewasa, cara mudah membuka web <a href="https://pemersatufun.site">Pemersatudotfun</a>, <a href="https://pemersatufun.site">Konten Viral Malay Viral Terbaharu</a>, bila terkena blocked</b>
-<br>1. install Best free fastest vpn <a href="https://1.1.1.1"><b>klik di sini</b></a> (windows, apple, android, Mac) <a href="https://1.1.1.1"><b>klik ini untuk install BEST FREE VPN</b></a>
-<br>2. apabila selesai memasang, aktifkan aplikasi kemudian lawati laman web <a href="https://pemersatufun.site"><b>PEMERSATUDOTFUN</b></a> dengan bebas
-<br>3. gunakan mode 1.1.1.1 pada settings VPN dan hindari penggunaan wrap kecuali masih terkena. blocked. 
+<li><a href="https://video.pemersatudotfun.com" target="_blank">video.pemersatudotfun.com</a></li>
+<li><a href="https://hijab.pemersatu.top" target="_blank"><span class="blinking">NEW </span>HIJAB SANGE<span class="blinking"> NEW</span></a></li>
+<li><a href="https://manga.pemersatu.org" target="_blank" rel="noopener"><span class="blinking">NEW </span>FREE MANGA HENTAI KOMIK BAHASA MELAYU<span class="blinking"> NEW</span></a></li>
+<li><a href="https://manga.pemersatu.top" target="_blank"><span class="blinking">NEW </span>Complete Manga Bahasa Melayu<span class="blinking"> NEW MORE CONTENTS</span></a></li>
+<li><a href="https://dood.pemersatufun.site" target="_blank" rel="noopener">dood.pemersatufun.site</a></li>
+</ul>
+	  <div class="paper">
+<p><strong>Kalau dah dewasa senang nak buka website PEMERSATU.FUN Kandungan Viral Melayu Viral Terkini kalau kena block dan selesa untuk dinikmati :</strong></p>
 <ul>
-</div>
-<center>
-<h1><a href="https://pemersatufun.site">MASUK</a> | <a rel="nofollow" href="https://wikipedia.com">EXIT</h1></a><br />
-situs PEMERSATUDOTFUN lainnya yang patut di semak pula, FREE 100% <BR />
-<a href="https://video.pemersatudotfun.com">video.pemersatudotfun.com</a><br/>
-<a href="https://dood.pemersatufun.site">dood.pemersatufun.site</a>	
-</center>
-    </main>
+<li>install Best free fastest vpn <a href="https://one.one.one.one/id-ID/" target="_blank">klik di sini</a> (windows, apple, android, Mac) klik ini untuk install <a href="https://one.one.one.one/id-ID/" target="_blank">BEST FREE VPN</a></li>
+<li>gunakan mode 1.1.1.1 pada settings VPN dan hindari penggunaan wrap kecuali masih terkena. blocked.</li>
+<li>sentiasa guna <strong>google chrome</strong> dan <strong>matikan sambungan adblock</strong> jika dipasang</li>
+</ul>
+<p><strong>Kawalan Ibu Bapa dan cara memastikan anak anda selamat daripada jenis tapak ini</strong></p>
+<p><small>Tidak salah melihat pornografi dalam persekitaran yang sihat dan selamat. Tetapi berhati-hati mesti diberi perhatian supaya golongan muda dan tidak bersalah tidak dapat menemuinya dalam talian. Apabila kanak-kanak melihat pornografi, mereka boleh membina kompleks badan. Mereka juga lebih cenderung untuk menjadi penagih seksual selepas mereka dewasa. Jadi meletakkan kawalan ibu bapa pada peranti dalam rumah anda melindungi minda dan sikap mereka terhadap seks dan lawan jenis. Akan tiba masanya anda tidak dapat melindungi anak-anak anda daripada cara dunia. Walau bagaimanapun, semasa mereka berada di rumah anda, anda boleh mengawal perkara yang mereka lihat dalam talian. gunakan salah satu perkhidmatan ibu bapa di bawah</small></p>
+<ul>
+<li><a class="link" href="https://family.norton.com/" target="_blank" rel="noopener">Norton Family</a></li>
+<li><a class="link" href="https://www.mobicip.com/" target="_blank" rel="noopener">Mobicip</a></li>
+<li><a class="link" href="https://www.qustodio.com/" target="_blank" rel="noopener">Qustodio</a></li>
+<li><a class="link" href="https://www.bark.us/" target="_blank" rel="noopener">Bark</a></li>
+<li><a class="link" href="https://www.netnanny.com/" target="_blank" rel="noopener">Net Nanny</a></li>
+<li><a class="link" href="https://www.sentrypc.com/" target="_blank" rel="noopener">SentryPC</a></li>
+</ul>
+		   </div>
+</main>
+
   </body>
 </html>
